@@ -1,0 +1,14 @@
+/*
+Modulo responsavel pelo segmento c do display de 7 segmentos
+*/
+
+module segC(out, A, B, C);
+	input A, B, C;
+	output out;
+	wire notA, notC;
+	
+	not not0(notA, A);
+	not not1(notC, C);
+	and and0(out, notA, B, notC);
+	
+endmodule

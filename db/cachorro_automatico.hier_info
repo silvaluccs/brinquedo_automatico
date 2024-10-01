@@ -1,0 +1,306 @@
+|contador
+a <= segA:segA_instan.out
+b <= segB:segB_instan.out
+c <= segC:segC_instan.out
+d <= segD:segD_instan.out
+e <= segE:segE_instan.out
+f <= segF:segF_instan.out
+g <= segG:segG_instan.out
+clock_entrada => clock_entrada.IN1
+botao => botao.IN1
+
+
+|contador|divisor_frequencia:dividirfreq
+bit0 <= bit0.DB_MAX_OUTPUT_PORT_TYPE
+bit1 <= bit1.DB_MAX_OUTPUT_PORT_TYPE
+bit2 <= FF_jk:FF_contador2.q
+clock_entrada => clock_entrada.IN1
+botao => botao.IN29
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk2
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk3
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk4
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk5
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk6
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk7
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk8
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk9
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk10
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk11
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk12
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk13
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk14
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk15
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk16
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk17
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk18
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk19
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk20
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk21
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk22
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk23
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk24
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk25
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_jk26
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_contador0
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_contador1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|divisor_frequencia:dividirfreq|FF_jk:FF_contador2
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => Mux0.IN3
+k => Mux0.IN4
+reset => q~reg0.ACLR
+clock => q~reg0.CLK
+
+
+|contador|segA:segA_instan
+out <= And0.DB_MAX_OUTPUT_PORT_TYPE
+A => Xor0.IN0
+B => And0.IN1
+C => Xor0.IN1
+
+
+|contador|segB:segB_instan
+out <= And0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN1
+B => Xor0.IN0
+C => Xor0.IN1
+
+
+|contador|segC:segC_instan
+out <= and0.DB_MAX_OUTPUT_PORT_TYPE
+A => and0.IN0
+B => and0.IN1
+C => and0.IN2
+
+
+|contador|segD:segD_instan
+out <= And0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN1
+B => Xnor0.IN0
+C => Xnor0.IN1
+
+
+|contador|segE:segE_instan
+out <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+A => And0.IN0
+B => And0.IN1
+C => Or0.IN1
+C => And0.IN2
+
+
+|contador|segF:segF_instan
+out <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+A => Xnor0.IN0
+A => And0.IN0
+B => And0.IN1
+B => Xnor0.IN1
+C => And1.IN1
+
+
+|contador|segG:segG_instan
+out <= Or0.DB_MAX_OUTPUT_PORT_TYPE
+A => And1.IN0
+A => And0.IN0
+B => And1.IN1
+B => And0.IN1
+C => And1.IN2
+
+

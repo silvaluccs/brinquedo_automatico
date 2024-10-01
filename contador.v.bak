@@ -1,0 +1,5 @@
+module contador(a, b, c, d, e, f, g, clock_entrada, botao);
+
+	input clock_entrada, botao_reset;
+	output a, b, c, d, e, f, g;
+	wire  bit0, bit1, bit2;
