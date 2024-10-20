@@ -1,0 +1,18 @@
+module contador_sincrono (
+    input wire clock,
+    input wire reset,
+    output reg [2:0] q
+);
+
+    always @(posedge clock or posedge reset) begin
+        if (reset) begin
+            q <= 3'b000; // Reseta o contador para 000
+        end else begin
+            if (q == 3'b110) begin
+                q <= 3'b000; // Reseta para 000 quando atinge 110
+            end else begin
+                q <= q + 1; // Incrementa o contador
+            end
+        end
+    end
+endmodule
