@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/lucas/codigos/uefs/mi circuitos digitais/brinquedo_automatico-main/simulation/qsim
+vcontador_sincrono
+Z1 !s110 1729438074
+!i10b 1
+!s100 4?FF:8:QQ9eZl9cFTiLEd2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]hzc;z6bQ_k3:PV8QM@Be3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1729438073
+Z4 8cachorro_automatico.vo
+Z5 Fcachorro_automatico.vo
+!i122 44
+L0 32 188
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1729438074.000000
+Z8 !s107 cachorro_automatico.vo|
+Z9 !s90 -work|work|cachorro_automatico.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vcontador_sincrono_vlg_vec_tst
+R1
+!i10b 1
+!s100 eXEPIYdJ_oh?TeZWf4N7[3
+R2
+IDg`;^4i0e49cI`kdgK:nT2
+R3
+R0
+w1729438071
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+!i122 45
+L0 30 40
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vdivisor_frequencia
+Z16 !s110 1728913531
+!i10b 1
+!s100 H@k3j1BJPV`fJ<?ChEm=F1
+R2
+I?i>jdPOCYDYAHX`^7;T3V3
+R3
+R0
+w1728913530
+R4
+R5
+!i122 14
+L0 32 1154
+R6
+r1
+!s85 0
+31
+Z17 !s108 1728913531.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdivisor_frequencia_vlg_vec_tst
+R16
+!i10b 1
+!s100 Ib4jER0R>O]IDb9;[SWom2
+R2
+I8nmdXD[8lCecP<1@l2PjL2
+R3
+R0
+w1728913528
+R12
+R13
+!i122 15
+L0 30 38
+R6
+r1
+!s85 0
+31
+R17
+R14
+R15
+!i113 1
+R10
+R11

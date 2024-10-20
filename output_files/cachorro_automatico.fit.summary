@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Oct 20 13:38:19 2024
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : cachorro_automatico
+Top-level Entity Name : main
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 42 / 240 ( 18 % )
+Total pins : 16 / 80 ( 20 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
