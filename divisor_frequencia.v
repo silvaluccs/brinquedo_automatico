@@ -4,9 +4,10 @@
 *
 */
 
-module divisor_frequencia(bit0, bit1, bit2, clock_entrada, botao);
+module divisor_frequencia(bit0, bit1, bit2, clock_entrada, botao, rl);
 	input clock_entrada, botao;
 	output bit0, bit1, bit2;
+	output [25:0] rl;
 	
 	
 	wire [25:0] clock_temp;
@@ -39,6 +40,8 @@ module divisor_frequencia(bit0, bit1, bit2, clock_entrada, botao);
 	FF_jk FF_jk24(.q(clock_temp[23]), .j(1'b1), .k(1'b1), .reset(botao), .clock(clock_temp[22]));
 	FF_jk FF_jk25(.q(clock_temp[24]), .j(1'b1), .k(1'b1), .reset(botao), .clock(clock_temp[23]));
 	FF_jk FF_jk26(.q(clock_temp[25]), .j(1'b1), .k(1'b1), .reset(botao), .clock(clock_temp[24]));
+	
+	assign rl = clock_temp;
 	
 	// instancia dos bits contadores do flipflop
 	FF_jk FF_contador0(.q(bit0), .j(1'b1), .k(1'b1), .reset(botao), .clock(clock_temp[25]));

@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Tue Oct 29 17:01:25 2024
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : cachorro_automatico
+Top-level Entity Name : contador_sincrono
+Family : MAX II
+Total logic elements : 6
+Total pins : 6
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

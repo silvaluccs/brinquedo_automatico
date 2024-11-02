@@ -1,11 +1,11 @@
-module velocidade_atual(chave1, chave2, display_ativar, d2, d3, d4, a, b, c, d, e, f, g, p);
+/*
+Modulo responsavel para configurar o mostrador de 7 segmentos
+para exibir a velocidade atual do robo
+*/
+
+module velocidade_atual(chave1, chave2, a, b, c, d, e, f, g, p);
  input chave1, chave2;
- output display_ativar, d2, d3, d4, a, b, c, d, e, f, g, p;
- 
- assign display_ativar = 1'b0;
- assign da = 1'b1;
- assign db = 1'b1;
- assign dc = 1'b1;
+ output a, b, c, d, e, f, g, p;
  
  seg0 instanA(a, chave1, chave2);
  seg0 instanD(d, chave1, chave2);
@@ -21,6 +21,7 @@ module velocidade_atual(chave1, chave2, display_ativar, d2, d3, d4, a, b, c, d, 
  assign p = 1'b1;
 endmodule
 
+// os modulos abaixo configuram os segmentos para exibir 0, 2, 4 8. Com base nessas chaves.
 
 module seg0(out, A, B);
 input A, B;

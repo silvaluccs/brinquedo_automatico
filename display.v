@@ -1,11 +1,10 @@
-module display(bit2, bit1, bit0, display_ativar, da, db, dc, a, b, c, d, e, f, g, p);
- input bit2, bit1, bit0;
- output display_ativar, da, db, dc, a, b, c, d, e, f, g, p;
- 
- assign display_ativar = 1'b0;
- assign da = 1'b1;
- assign db = 1'b1;
- assign dc = 1'b1;
+/*
+Modulo responsavel por configurar os segmentos para exibir o movimento atual do cachorro
+*/
+
+module display(bit0, bit2, bit1,  a, b, c, d, e, f, g, p);
+ input bit2, bit1, bit0; // bit0 eh o msb	
+ output a, b, c, d, e, f, g, p;
  
  segA  segA_instan(.out(a), .A(bit0), .B(bit1), .C(bit2));
  segB	segB_instan(.out(b), .A(bit0), .B(bit1), .C(bit2));

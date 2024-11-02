@@ -1,0 +1,85 @@
+|contador_sincrono
+clock_in => clock_in.IN3
+reset => reset.IN2
+bits_out[0] <= proximo[0].DB_MAX_OUTPUT_PORT_TYPE
+bits_out[1] <= proximo[1].DB_MAX_OUTPUT_PORT_TYPE
+bits_out[2] <= proximo[2].DB_MAX_OUTPUT_PORT_TYPE
+power => notPower.IN1
+
+
+|contador_sincrono|controle:controle_instan
+Entrada[0] => Xor0.IN0
+Entrada[0] => and3.IN0
+Entrada[0] => and0.IN1
+Entrada[0] => and2.IN0
+Entrada[1] => NAND_AB.IN0
+Entrada[1] => Xor0.IN1
+Entrada[1] => and3.IN1
+Entrada[1] => and2.IN1
+Entrada[2] => NAND_AB.IN1
+Entrada[2] => and2.IN2
+Entrada[2] => and1.IN1
+Entrada[2] => and3.IN2
+Saida[0] <= mux_2x1_gl:muxC.port3
+Saida[1] <= mux_2x1_gl:muxB.port3
+Saida[2] <= mux_2x1_gl:muxA.port3
+reset => OR3.IN1
+reset => OR2.IN1
+reset => AND3.IN1
+notPower => notPower.IN3
+
+
+|contador_sincrono|controle:controle_instan|mux_2x1_gl:muxC
+I0 => a.IN0
+I1 => b.IN0
+S => b.IN1
+S => a.IN1
+Y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_sincrono|controle:controle_instan|mux_2x1_gl:muxB
+I0 => a.IN0
+I1 => b.IN0
+S => b.IN1
+S => a.IN1
+Y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_sincrono|controle:controle_instan|mux_2x1_gl:muxA
+I0 => a.IN0
+I1 => b.IN0
+S => b.IN1
+S => a.IN1
+Y <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_sincrono|control_reset:contr_instan
+Entrada[0] => Saida.DATAA
+Entrada[1] => Saida.DATAA
+Entrada[2] => Saida.DATAA
+Saida[0] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+reset => Saida.OUTPUTSELECT
+reset => Saida.OUTPUTSELECT
+reset => Saida.OUTPUTSELECT
+
+
+|contador_sincrono|FF_d:Ff_A
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+
+
+|contador_sincrono|FF_d:Ff_B
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+
+
+|contador_sincrono|FF_d:Ff_C
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+
+
